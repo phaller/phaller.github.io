@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Philipp Haller</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link rel="icon" type="image/png" href="./resources/favicon.ico">
+
+    <!-- jquery js -->
+    <script src="./resources/js/vendor/jquery-1.8.3.min.js" type="text/javascript" ></script>
+    <script src="./resources/js/vendor/jquery-equalheights.js" type="text/javascript" ></script>
+
+    <!-- modernizr js -->
+    <script src="./resources/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js" type="text/javascript" ></script>
+
+    <!-- Bootstrap JS and CSS -->
+    <link rel="stylesheet" href="./resources/css/bootstrap.css" type="text/css" />
+    <script src="./resources/js/vendor/bootstrap.min.js" type="text/javascript" ></script>
+
+    <!-- Google web fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Asap:400,400italic' rel='stylesheet' type='text/css'>
+
+    <!-- Leaflet js maps -->
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="./resources/css/main.css" type="text/css" />
+
+    <!-- Custom javascript -->
+    <script src="./resources/js/main.js" type="text/javascript" ></script>
+
+  </head>
+  <body>
+
+<div class="bluestripe">&nbsp;</div>
+
+<div class="wrapper">
+  <div class="ribbon"><img src="./resources/img/ribbon.png"></div>
+  <div class="container">
+    <div class="rightcolumn"> &nbsp;</div>
+    <div class="row">
+      <div class="span8">
+        <div class='name'>
+  <span class='firstname'>Philipp</span>
+  <span class='lastname'>Haller</span>
+</div><ul class='navigation'>
+  <li><a href='#projects'>Projects</a></li>
+  <li><a href='#publications'>Publications</a></li>
+  <li><a href='#talks'>Talks</a></li>
+  <li><a href='#program-committees'>Committees</a></li>
+</ul><p class='statement'>Assistant Professor in the <a href='http://www.csc.kth.se/tcs/'>Theoretical Computer Science Group</a>
+   at <a href='https://www.kth.se/en'>KTH Royal Institute of Technology</a>.
+</p>
+<p>My areas of research are programming languages, type systems, and concurrent/distributed programming.</p>
+
+<p>Previously, I was a researcher, software engineer, and consultant at <a href='http://www.typesafe.com/'>Typesafe</a>. Prior to Typesafe, I was a post-doctoral fellow in the <a href="http://ppl.stanford.edu/">Pervasive Parallelism Lab</a> at <a href="http://www.stanford.edu/">Stanford University</a> and in the <a href="http://lamp.epfl.ch/">Programming Methods Lab (LAMP)</a> at <a href="http://www.epfl.ch/">EPFL</a>, Switzerland. Prior to that I was a PhD student of Martin Odersky. My main research interests are in the design and implementation of programming languages and managed runtime environments to support concurrent and parallel software. I received a PhD in Computer Science from <a href="http://www.epfl.ch/">EPFL</a> in Lausanne, Switzerland, in 2010.</p>
+
+<p>I am a <a href="https://github.com/scala/scala/contributors">top-10 contributor</a> of the Scala project. Recently, I have been working on <a href="http://docs.scala-lang.org/overviews/core/futures.html">Scala 2.10 futures</a> (SIP-14) as well as Scala’s upcoming <a href="http://docs.scala-lang.org/sips/pending/async.html">Async</a> feature (SIP-22) for asynchronous and concurrent programming.</p>
+
+<p><strong><a href="doc/haller-cv.pdf">Curriculum Vitae</a></strong></p>
+
+<h2 id="projects">Projects</h2>
+
+<ul>
+<li>
+<p><a href="#RAY">RAY</a>: Integrating direct-style futures and reactive extensions</p>
+</li>
+
+<li>
+<p><a href="DCP">Data-Centric Programming</a>: Programming support for Big Data applications with <a href="http://heather.miller.am/">Heather Miller</a></p>
+</li>
+
+<li>
+<p><a href="http://docs.scala-lang.org/sips/pending/async.html">Scala Async (SIP-22)</a>: Optimized asynchronous continuations for direct-style futures</p>
+</li>
+
+<li>
+<p><a href="http://docs.scala-lang.org/sips/completed/futures-promises.html">Futures and Promises in Scala 2.10 (SIP-14)</a>: Composable and efficient, non-blocking futures</p>
+</li>
+</ul>
+
+<h3 id="past_projects">Past Projects</h3>
+
+<ul>
+<li>
+<p><a href="http://lampwww.epfl.ch/~phaller/capabilities.html">Unique References for Scala</a>: Uniqueness types based on static capabilities</p>
+</li>
+
+<li>
+<p><a href="http://lampwww.epfl.ch/~phaller/actors.html">Scala Actors</a>: Very lightweight concurrent processes integrated with Scala through a high-level embedded domain-specific language</p>
+</li>
+
+<li>
+<p><a href="http://stanford-ppl.github.com/Delite/">Delite</a>: A compiler framework and runtime for parallel embedded domain-specific languages</p>
+</li>
+
+<li>
+<p><a href="http://lcavwww.epfl.ch/~hmiller/menthor/">Menthor: Parallelizing Machine Learning–Functionally</a>: A framework and abstraction for parallelizing iterative algorithms common to fields like machine learning and convex optimization</p>
+</li>
+
+<li>
+<p><a href="http://lampwww.epfl.ch/~phaller/joins/index.html">Scala Joins</a>: An implementation of joins for Scala based on extensible pattern matching</p>
+</li>
+</ul>
+
+<h2 id="publications">Publications</h2>
+<div class='book'>
+  <div class='bookinfo'>
+    <h3>Book</h3>
+      <p><a href='http://www.artima.com/shop/actors_in_scala'>Actors in Scala</a>, <span style='color: #000000;'>by Philipp Haller and Frank Sommers.</span> <span style='font-style: italic;'>Walnut Creek, California. Artima Inc, 2012.</span></p>
+      <p style='font-size: 14px; color: #a0a0a0;'>
+        Actors in Scala is the authoritative guide to programming with the actors framework of Scala's standard library, co-written by the creator and lead maintainer, Philipp Haller. The book provides a comprehensive introduction to the actor model of concurrency and shows how Scala's actors enable you to build efficient, scalable, and robust concurrent software for the JVM.
+      </p>
+  </div>
+  <div class='bookcover'>
+    <img src='./resources/img/actors-book.png' />
+  </div>
+</div>
+<h3 id="journal_publications">Journal Publications</h3>
+<div class='publication'>
+      <div class='pdf'><a href='http://link.springer.com/article/10.1007/s10990-013-9096-9'><img src='./resources/img/pdf.png' /></a></div>
+      
+      <div class='info'>
+      <div class='title'><a href='http://link.springer.com/article/10.1007/s10990-013-9096-9'>Scala-Virtualized: Linguistic Reuse for Deep Embeddings</a></div>.
+      
+      <div class='author'>Tiark Rompf, Adriaan Moors, Nada Amin, Philipp Haller, and Martin Odersky</div>.
+      <div class='conference'>Higher-Order and Symbolic Computation,</div>
+      Volume 25,
+      Issue 1.
+       <div class='date'>2012.</div> 
+      pages 165-207.
+      </div>
+  </div><div class='publication'>
+      <div class='pdf'><a href='http://infoscience.epfl.ch/record/128406/'><img src='./resources/img/pdf.png' /></a></div>
+      
+      <div class='info'>
+      <div class='title'><a href='http://infoscience.epfl.ch/record/128406/'>Scala Actors: Unifying Thread-based and Event-based Programming</a></div>.
+      
+      <div class='author'>Philipp Haller and Martin Odersky</div>.
+      <div class='conference'>Theoretical Computer Science,</div>
+      Volume 410,
+      Issue 2-3.
+       <div class='date'>2009.</div> 
+      pages 202-220.
+      </div>
+  </div>
+<h3 id="conference_and_workshop_publications">Conference and Workshop Publications</h3>
+<div class='publication'>
+      
+      <div class='pdf'><a href=''><img src='./resources/img/pdf.png' /></a></div>
+      
+      <div class='info'>
+      <div class='title'><a href=''>Function Passing: A Model for Typed, Distributed Functional Programming</a></div>.
+      
+      <div class='author'>Heather Miller, Philipp Haller, Normen Mueller, Jocelyn Boullier, Jorge Vicente Cantero</div>.
+      <div class='conference'>ACM International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software</div>
+      <div class='abbrv'>(Onward! 2016),</div>
+      <div class='location'>Amsterdam, The Netherlands, </div><div class='date'>November 2016.</div>
+      
+      </div>
+  </div><div class='publication'>
+      
+      <div class='pdf'><a href='http://dl.acm.org/citation.cfm?doid=2824815.2824821'><img src='./resources/img/pdf.png' /></a></div>
+      
+      <div class='info'>
+      <div class='title'><a href='http://dl.acm.org/citation.cfm?doid=2824815.2824821'>Akka.js: towards a portable actor runtime environment</a></div>.
+      
+      <div class='author'>Gianluca Stivan, Andrea Peruffo, and Philipp Haller</div>.
+      <div class='conference'>International Workshop on Programming Based on Actors, Agents, and Decentralized Control</div>
+      <div class='abbrv'>(AGERE! 2015),</div>
+      <div class='location'>Pittsburgh, PA, USA, </div><div class='date'>October 2015.</div>
+      
+      </div>
+  </div><div class='publication'>
+      
+      <div class='pdf'><a href='http://infoscience.epfl.ch/record/191239/files/spores_1.pdf'><img src='./resources/img/pdf.png' /></a></div>
+      
+      <div class='info'>
+      <div class='title'><a href='http://infoscience.epfl.ch/record/191239/files/spores_1.pdf'>Spores: A Type-Based Foundation for Closures in the Age of Concurrency and Distribution</a></div>.
+      
+      <div class='author'>Heather Miller, Philipp Haller, and Martin Odersky</div>.
+      <div class='conference'>European Conference on Object-Oriented Programming</div>
+      <div class='abbrv'>(ECOOP 2014),</div>
+      <div class='location'>Uppsala, Sweden, </div><div class='date'>July 2014.</div>
+      
+      </div>
+  </div><div class='publication'>
+      
+      <div class='pdf'><a href='http://infoscience.epfl.ch/record/190022/files/icse-progfun.pdf'><img src='./resources/img/pdf.png' /></a></div>
+      
+      <div class='info'>
+      <div class='title'><a href='http://infoscience.epfl.ch/record/190022/files/icse-progfun.pdf'>Functional Programming For All! Scaling a MOOC for Students and Professionals Alike</a></div>.
+      
+      <div class='author'>Heather Miller, Philipp Haller, Lukas Rytz, and Martin Odersky</div>.
+      <div class='conference'>36th Int'l Conference on Software Engineering, Software Engineering Education and Training Track</div>
+      <div class='abbrv'>(ICSE SEET 2014),</div>
+      <div class='location'>Hyderabad, India, </div><div class='date'>June 2014.</div>
+      
+      </div>
+  </div><div class='publication'>
+      <a id='RAY' />
+      <div class='pdf'><a href='http://infoscience.epfl.ch/record/188383/files/directrx.pdf'><img src='./resources/img/pdf.png' /></a></div>
+      
+      <div class='info'>
+      <div class='title'><a href='http://infoscience.epfl.ch/record/188383/files/directrx.pdf'>RAY: Integrating Rx and Async for Direct-Style Reactive Streams</a></div>.
+      
+      <div class='author'>Philipp Haller and Heather Miller</div>.
+      <div class='conference'>SPLASH Workshop on Reactivity, Events and Modularity</div>
+      <div class='abbrv'>(REM 2013),</div>
+      <div class='location'>Indianapolis, IN, USA, </div><div class='date'>October 2013.</div>
+      
+      </div>
+  </div><div class='publication'>
+      
+      <div class='pdf'><a href='http://infoscience.epfl.ch/record/187787/files/oopsla-pickling_1.pdf'><img src='./resources/img/pdf.png' /></a></div>
+      
+      <div class='info'>
+      <div class='title'><a href='http://infoscience.epfl.ch/record/187787/files/oopsla-pickling_1.pdf'>Instant Pickles: Generating Object-Oriented Pickler Combinators for Fast and Extensible Serialization</a></div>.
+      
+      <div class='author'>Heather Miller, Philipp Haller, Eugene Burmako, and Martin Odersky</div>.
+      <div class='conference'>ACM International Conference on Object Oriented Programming Systems Languages and Applications</div>
+      <div class='abbrv'>(OOPSLA 2013),</div>
+      <div class='location'>Indianapolis, IN, USA, </div><div class='date'>October 2013.</div>
+      
+      </div>
+  </div><div class='publication'>
+      
+      <div class='pdf'><a href='http://lampwww.epfl.ch/~phaller/doc/haller12-Integrating_actors_in_mainstream_technologies.pdf'><img src='./resources/img/pdf.png' /></a></div>
+      
+      <div class='info'>
+      <div class='title'><a href='http://lampwww.epfl.ch/~phaller/doc/haller12-Integrating_actors_in_mainstream_technologies.pdf'>On the Integration of the Actor Model in Mainstream Technologies-- The Scala Perspective</a></div>.
+      
+      <div class='author'>Philipp Haller</div>.
+      <div class='conference'>ACM SIGPLAN Workshop on Programming Based on Actors, Agents, and Decentralized Control</div>
+      <div class='abbrv'>(AGERE! 2012),</div>
+      <div class='location'>Tucson, Arizona, USA, </div><div class='date'>October 2012.</div>
+      
+      </div>
+  </div><div class='publication'>
+      
+      <div class='pdf'><a href='http://infoscience.epfl.ch/record/180265/'><img src='./resources/img/pdf.png' /></a></div>
+      
+      <div class='info'>
+      <div class='title'><a href='http://infoscience.epfl.ch/record/180265/'>FlowPools: A Lock-Free Deterministic Concurrent Dataflow Abstraction</a></div>.
+      
+      <div class='author'>Aleksandar Prokopec, Heather Miller, Tobias Schlatter, Philipp Haller, and Martin Odersky</div>.
+      <div class='conference'>Languages and Compilers for Parallel Computing</div>
+      <div class='abbrv'>(LCPC 2012),</div>
+      <div class='location'>Tokyo, Japan, </div><div class='date'>September 2012.</div>
+      
+      </div>
+  </div><div class='publication'>
+      
+      <div class='pdf'><a href='http://infoscience.epfl.ch/record/175240/'><img src='./resources/img/pdf.png' /></a></div>
+      
+      <div class='info'>
+      <div class='title'><a href='http://infoscience.epfl.ch/record/175240/'>Lightweight Polymorphic Effects</a></div>.
+      
+      <div class='author'>Lukas Rytz, Martin Odersky, and Philipp Haller</div>.
+      <div class='conference'>European Conference on Object-Oriented Programming</div>
+      <div class='abbrv'>(ECOOP 2012),</div>
+      <div class='location'>Beijing, China, </div><div class='date'>June 2012.</div>
+      
+      </div>
+  </div><div class='publication'>
+      
+      <div class='pdf'><a href='http://lampwww.epfl.ch/~phaller/doc/pepm2012.pdf'><img src='./resources/img/pdf.png' /></a></div>
+      
+      <div class='info'>
+      <div class='title'><a href='http://lampwww.epfl.ch/~phaller/doc/pepm2012.pdf'>Tool Demo: Scala-Virtualized</a></div>.
+      
+      <div class='author'>Adriaan Moors, Tiark Rompf, Philipp Haller, and Martin Odersky</div>.
+      <div class='conference'>ACM SIGPLAN Workshop on Partial Evaluation and Program Manipulation</div>
+      <div class='abbrv'>(PEPM 2012),</div>
+      <div class='location'>Philadelphia, PA, USA, </div><div class='date'>January 2012.</div>
+      
+      </div>
+  </div><div class='publication'>
+      
+      <div class='pdf'><a href='http://lampwww.epfl.ch/~phaller/doc/nips2011.pdf'><img src='./resources/img/pdf.png' /></a></div>
+      
+      <div class='info'>
+      <div class='title'><a href='http://lampwww.epfl.ch/~phaller/doc/nips2011.pdf'>Tools and Frameworks for Big Learning in Scala: Leveraging the Language for High Productivity and Performance</a></div>.
+      
+      <div class='author'>Heather Miller, Philipp Haller, and Martin Odersky</div>.
+      <div class='conference'>NIPS Workshop on Parallel and Large-Scale Machine Learning</div>
+      <div class='abbrv'>(BigLearn 2011),</div>
+      <div class='location'>Sierra Nevada, Spain, </div><div class='date'>December 2011.</div>
+      
+      </div>
+  </div><div class='publication'>
+      
+      <div class='pdf'><a href='http://lampwww.epfl.ch/~phaller/menthor/index.html'><img src='./resources/img/pdf.png' /></a></div>
+      
+      <div class='info'>
+      <div class='title'><a href='http://lampwww.epfl.ch/~phaller/menthor/index.html'>Parallelizing Machine Learning-- Functionally: A Framework and Abstractions for Parallel Graph Processing</a></div>.
+      
+      <div class='author'>Philipp Haller and Heather Miller</div>.
+      <div class='conference'>Scala Workshop,</div>
+      
+      <div class='location'>Stanford, CA, USA, </div><div class='date'>June 2011.</div>
+      
+      </div>
+  </div><div class='publication'>
+      
+      <div class='pdf'><a href='http://gee.cs.oswego.edu/dl/html/cap/cap100_submission_8.pdf'><img src='./resources/img/pdf.png' /></a></div>
+      
+      <div class='info'>
+      <div class='title'><a href='http://gee.cs.oswego.edu/dl/html/cap/cap100_submission_8.pdf'>Static Debugging of Programs Using High-Level Concurrency Libraries (Position Paper)</a></div>.
+      
+      <div class='author'>Philipp Haller</div>.
+      <div class='conference'>SPLASH Workshop on Concurrency for the Application Programmer,</div>
+      
+      <div class='location'>Reno, Nevada, USA, </div><div class='date'>October 2010.</div>
+      
+      </div>
+  </div><div class='publication'>
+      
+      <div class='pdf'><a href='http://lampwww.epfl.ch/~phaller/capabilities.html'><img src='./resources/img/pdf.png' /></a></div>
+      
+      <div class='info'>
+      <div class='title'><a href='http://lampwww.epfl.ch/~phaller/capabilities.html'>Capabilities for Uniqueness and Borrowing</a></div>.
+      
+      <div class='author'>Philipp Haller and Martin Odersky</div>.
+      <div class='conference'>European Conference on Object-Oriented Programming</div>
+      <div class='abbrv'>(ECOOP 2010),</div>
+      <div class='location'>Maribor, Slovenia, </div><div class='date'>June 2010.</div>
+      
+      </div>
+  </div><div class='publication'>
+      
+      <div class='pdf'><a href='http://lampwww.epfl.ch/~phaller/scalaworkshop2010.html'><img src='./resources/img/pdf.png' /></a></div>
+      
+      <div class='info'>
+      <div class='title'><a href='http://lampwww.epfl.ch/~phaller/scalaworkshop2010.html'>Lightweight Language Support for Type-based, Concurrent Event Processing</a></div>.
+      
+      <div class='author'>Philipp Haller</div>.
+      <div class='conference'>Scala Workshop,</div>
+      
+      <div class='location'>Lausanne, Switzerland, </div><div class='date'>April 2010.</div>
+      
+      </div>
+  </div><div class='publication'>
+      
+      <div class='pdf'><a href='http://lampwww.epfl.ch/~phaller/joins/index.html'><img src='./resources/img/pdf.png' /></a></div>
+      
+      <div class='info'>
+      <div class='title'><a href='http://lampwww.epfl.ch/~phaller/joins/index.html'>Implementing Joins using Extensible Pattern Matching</a></div>.
+      
+      <div class='author'>Philipp Haller and Tom Van Cutsem</div>.
+      <div class='conference'>10th International Conference on Coordination Models and Languages</div>
+      <div class='abbrv'>(Coordination 2008),</div>
+      <div class='location'>Oslo, Norway, </div><div class='date'>June 2008.</div>
+      
+      </div>
+  </div><div class='publication'>
+      
+      <div class='pdf'><a href='http://infoscience.epfl.ch/record/104549/'><img src='./resources/img/pdf.png' /></a></div>
+      
+      <div class='info'>
+      <div class='title'><a href='http://infoscience.epfl.ch/record/104549/'>Actors that Unify Threads and Events</a></div>.
+      
+      <div class='author'>Philipp Haller and Martin Odersky</div>.
+      <div class='conference'>9th International Conference on Coordination Models and Languages</div>
+      <div class='abbrv'>(Coordination 2007),</div>
+      <div class='location'>Paphos, Cyprus, </div><div class='date'>June 2007.</div>
+      
+      </div>
+  </div><div class='publication'>
+      
+      <div class='pdf'><a href='http://infoscience.epfl.ch/record/95710/'><img src='./resources/img/pdf.png' /></a></div>
+      
+      <div class='info'>
+      <div class='title'><a href='http://infoscience.epfl.ch/record/95710/'>Event-Based Programming without Inversion of Control</a></div>.
+      
+      <div class='author'>Philipp Haller and Martin Odersky</div>.
+      <div class='conference'>7th Joint Modular Languages Conference</div>
+      <div class='abbrv'>(JMLC 2006),</div>
+      <div class='location'>Oxford, UK, </div><div class='date'>September 2006.</div>
+      
+      </div>
+  </div>
+<h3 id="theses">Theses</h3>
+<div class='publication'>
+      <div class='pdf'><a href='http://library.epfl.ch/theses/?nr=4874'><img src='./resources/img/pdf.png' /></a></div>
+      
+      <div class='info'>
+      <div class='title'><a href='http://library.epfl.ch/theses/?nr=4874'>Isolated Actors for Race-Free Concurrent Programming</a>,</div>
+      
+      <div class='author'>by Philipp Haller.</div>
+      <div class='type'>Ph.D. Dissertation.</div>
+      <div class='institution'>École Polytechnique Fédérale de Lausanne.</div>
+      <div class='date'>2010.</div>
+      </div>
+  </div><div class='publication'>
+      <div class='pdf'><a href='http://lampwww.epfl.ch/~phaller/actors.html'><img src='./resources/img/pdf.png' /></a></div>
+      
+      <div class='info'>
+      <div class='title'><a href='http://lampwww.epfl.ch/~phaller/actors.html'>An Object-Oriented Programming Model for Event-Based Actors</a>,</div>
+      
+      <div class='author'>by Philipp Haller.</div>
+      <div class='type'>Diploma thesis, IPD Goos.</div>
+      <div class='institution'>University of Karlsruhe.</div>
+      <div class='date'>2006.</div>
+      </div>
+  </div>
+<h2 id="talks">Talks</h2>
+<ul>
+
+  
+  <li><div class='talk'>
+      <span class='label' style='background-color: #CA432F;'>invited</span>
+      <div class='title'>Invited Keynote Talk: Papers vs. Artifacts,</div>
+      
+      <div class='conference'>SPLASH 2015 Doctoral Symposium,</div>
+      <div class='location'>Pittsburgh, Pennsylvania, USA, </div>
+      <div class='date'>October 2015.</div>
+      <div class='slides'>[<a href='http://2015.splashcon.org/event/splash2015-ds-invited-talk-iii'>slides</a>]</div>
+      
+      
+  </div></li>
+  
+
+  
+  <li><div class='talk'>
+      <span class='label' style='background-color: #CA432F;'>invited</span>
+      <div class='title'>Keynote: High-Level Concurrency Libraries: Challenges for Tool Support,</div>
+      
+      <div class='conference'>ETX 2015 Eclipse Technology eXchange,</div>
+      <div class='location'>Pittsburgh, Pennsylvania, USA, </div>
+      <div class='date'>October 2015.</div>
+      <div class='slides'>[<a href='http://2015.splashcon.org/event/etx2015-keynote-by-philipp-haller'>slides</a>]</div>
+      <div class='slides'>[<a href='https://www.youtube.com/watch?v=BdHps4esTsA'>video</a>]</div>
+      
+  </div></li>
+  
+
+  
+
+  
+  <li><div class='talk'>
+      
+      <div class='title'>A formal model for direct-style asynchronous observables,</div>
+      
+      <div class='conference'>27th Nordic Workshop on Programming Theory (NWPT 2015),</div>
+      <div class='location'>Reykjavik University, Iceland, </div>
+      <div class='date'>October 2015.</div>
+      <div class='slides'>[<a href='http://icetcs.ru.is/nwpt2015/SLIDES/Haller.pdf'>slides</a>]</div>
+      
+      
+  </div></li>
+  
+
+  
+  <li><div class='talk'>
+      
+      <div class='title'>Function-Passing Style, A New Model for Asynchronous and Distributed Programming,</div>
+      <div class='with'>with Heather Miller,</div>
+      <div class='conference'>Scala Days 2015,</div>
+      <div class='location'>Amsterdam, Netherlands, </div>
+      <div class='date'>June 2015.</div>
+      
+      <div class='slides'>[<a href='https://www.parleys.com/tutorial/scala15_09_effecten_6function-passing-style-a-new-model-asynchronous-distributed-programming'>video</a>]</div>
+      
+  </div></li>
+  
+
+  
+
+  
+  <li><div class='talk'>
+      
+      <div class='title'>Futures and Async: When to Use Which?,</div>
+      
+      <div class='conference'>Scala Days 2014,</div>
+      <div class='location'>Berlin, Germany, </div>
+      <div class='date'>June 2014.</div>
+      <div class='slides'>[<a href='doc/FuturesAsync_ScalaDays2014.pdf'>slides</a>]</div>
+      <div class='slides'>[<a href='https://www.parleys.com/tutorial/futures-async-when-use-which'>video</a>]</div>
+      
+  </div></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><div class='talk'>
+      
+      <div class='title'>Scala Async: A New Way to Simplify Asynchronous Code (Make the Compiler Do It!),</div>
+      
+      <div class='conference'>Scala Days 2013,</div>
+      <div class='location'>New York City, NY, </div>
+      <div class='date'>June 2013.</div>
+      <div class='slides'>[<a href='http://lampwww.epfl.ch/~phaller/doc/ScalaAsync_ScalaDays2013.pdf'>slides</a>]</div>
+      <div class='slides'>[<a href='http://parleys.com/play/51c0b264e4b0d38b54f461f2/chapter0/about'>video</a>]</div>
+      
+  </div></li>
+  
+
+  
+  <li><div class='talk'>
+      <span class='label' style='background-color: #CA432F;'>invited</span>
+      <div class='title'>Simplifying Asynchronous Code with Scala Async,</div>
+      
+      <div class='conference'>Skills Matter,</div>
+      <div class='location'>London, UK, </div>
+      <div class='date'>June 2013.</div>
+      <div class='slides'>[<a href='http://lampwww.epfl.ch/~phaller/doc/ScalaAsync_SkillsMatter2013.pdf'>slides</a>]</div>
+      <div class='slides'>[<a href='http://skillsmatter.com/podcast/scala/simplifying-asynchronous-code-with-scala-async-4233'>video</a>]</div>
+      
+  </div></li>
+  
+
+  
+  <li><div class='talk'>
+      
+      <div class='title'>Simplifying Asynchronous Code with Scala Async,</div>
+      
+      <div class='conference'>Emerging Technologies for the Enterprise (PhillyETE),</div>
+      <div class='location'>Philadelphia, PA, USA, </div>
+      <div class='date'>April 2013.</div>
+      <div class='slides'>[<a href='http://chariotsolutions.com/presentations/scala-async-a-new-way-to-simplify-asynchronous-cod/presentation_documents'>slides</a>]</div>
+      <div class='slides'>[<a href='https://vimeo.com/66864872'>video</a>]</div>
+      
+  </div></li>
+  
+
+  
+  <li><div class='talk'>
+      
+      <div class='title'>Correctly and Efficiently Combining Concurrency Abstractions,</div>
+      
+      <div class='conference'>Skills Matter,</div>
+      <div class='location'>London, UK, </div>
+      <div class='date'>December 2012.</div>
+      <div class='slides'>[<a href='http://lampwww.epfl.ch/~phaller/doc/Combining_Concurrency.pdf'>slides</a>]</div>
+      <div class='slides'>[<a href='http://skillsmatter.com/podcast/scala/correctly-and-efficiently-combining-concurrency-abstractions'>video</a>]</div>
+      
+  </div></li>
+  
+
+  
+  <li><div class='talk'>
+      <span class='label' style='background-color: #CA432F;'>invited</span>
+      <div class='title'>Futures and Promises in Scala 2.10,</div>
+      
+      <div class='conference'>The Scala eXchange,</div>
+      <div class='location'>London, UK, </div>
+      <div class='date'>November 2012.</div>
+      <div class='slides'>[<a href='http://lampwww.epfl.ch/~phaller/doc/Futures-Play-ScalaX.pdf'>slides</a>]</div>
+      
+      
+  </div></li>
+  
+
+  
+
+  
+  <li><div class='talk'>
+      <span class='label' style='background-color: #CA432F;'>invited</span>
+      <div class='title'>Keynote: On the Integration of the Actor Model in Mainstream Technologies-- The Scala Perspective,</div>
+      
+      <div class='conference'>AGERE! @ SPLASH 2012,</div>
+      <div class='location'>Tucson, Arizona, USA, </div>
+      <div class='date'>October 2012.</div>
+      <div class='slides'>[<a href='http://apice.unibo.it/xwiki/bin/download/AGERE2012/Program/slidesphilipp.pdf'>slides</a>]</div>
+      
+      
+  </div></li>
+  
+
+  
+
+  
+  <li><div class='talk'>
+      
+      <div class='title'>Futures and Promises in Scala 2.10,</div>
+      <div class='with'>with Heather Miller,</div>
+      <div class='conference'>Scala Enthusiasts Lausanne Meeting,</div>
+      <div class='location'>Lausanne, Switzerland, </div>
+      <div class='date'>September 2012.</div>
+      <div class='slides'>[<a href='https://speakerdeck.com/heathermiller/futures-and-promises-in-scala-2-dot-10'>slides</a>]</div>
+      
+      
+  </div></li>
+  
+
+  
+  <li><div class='talk'>
+      
+      <div class='title'>Futures and Promises in Scala 2.10,</div>
+      <div class='with'>with Heather Miller,</div>
+      <div class='conference'>Boston Area Scala Enthusiasts,</div>
+      <div class='location'>Boston, Massachusetts, USA, </div>
+      <div class='date'>August 2012.</div>
+      <div class='slides'>[<a href='https://speakerdeck.com/heathermiller/futures-and-promises-in-scala-2-dot-10'>slides</a>]</div>
+      
+      
+  </div></li>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <li><div class='talk'>
+      
+      <div class='title'>The Many Flavors of Parallel Programming in Scala,</div>
+      
+      <div class='conference'>Scalathon 2011,</div>
+      <div class='location'>Philadelphia, Pennsylvania, USA, </div>
+      <div class='date'>July 2011.</div>
+      <div class='slides'>[<a href='http://lampwww.epfl.ch/~phaller/doc/Scalathon2011.pdf'>slides</a>]</div>
+      
+      
+  </div></li>
+  
+
+  
+  <li><div class='talk'>
+      
+      <div class='title'>Scala for Multicore Programming,</div>
+      
+      <div class='conference'>UPMARC Multicore Computing Summer School,</div>
+      <div class='location'>Stockholm, Sweden, </div>
+      <div class='date'>June 2011.</div>
+      
+      
+      <div class='slides'>[<a href='http://lampwww.epfl.ch/~phaller/upmarc/'>resources</a>]</div>
+  </div></li>
+  
+
+  
+  <li><div class='talk'>
+      
+      <div class='title'>Parallelizing Machine Learning-- Functionally,</div>
+      <div class='with'>with Heather Miller,</div>
+      <div class='conference'>Second Annual Scala Workshop,</div>
+      <div class='location'>Stanford, California, USA, </div>
+      <div class='date'>June 2011.</div>
+      <div class='slides'>[<a href='http://lampwww.epfl.ch/~phaller/doc/scaladays2011-presentation.pdf'>slides</a>]</div>
+      
+      
+  </div></li>
+  
+
+  
+
+  
+
+  
+
+  
+  <li><div class='talk'>
+      
+      <div class='title'>Capabilities for Uniqueness and Borrowing,</div>
+      
+      <div class='conference'>24th European Conference on Object-Oriented Programming (ECOOP 2010),</div>
+      <div class='location'>Maribor, Slovenia, </div>
+      <div class='date'>June 2010.</div>
+      <div class='slides'>[<a href='http://lampwww.epfl.ch/~phaller/doc/capabilities-uniqueness2.pdf'>slides</a>]</div>
+      
+      
+  </div></li>
+  
+
+  
+
+  
+  <li><div class='talk'>
+      
+      <div class='title'>Lightweight language support for type-based, concurrent event processing,</div>
+      
+      <div class='conference'>First Annual Scala Workshop,</div>
+      <div class='location'>Lausanne, Switzerland, </div>
+      <div class='date'>April 2010.</div>
+      <div class='slides'>[<a href='http://lampwww.epfl.ch/~phaller/doc/TranslucentScalaWorkshop2010.pdf'>slides</a>]</div>
+      <div class='slides'>[<a href='http://days2010.scala-lang.org/node/138/149'>video</a>]</div>
+      
+  </div></li>
+  
+
+  
+
+  
+  <li><div class='talk'>
+      
+      <div class='title'>Scala: How to Make Best Use of Functions and Objects,</div>
+      <div class='with'>with Lukas Rytz and Martin Odersky,</div>
+      <div class='conference'>Tutorial at ACM Symposium on Applied Computing,</div>
+      <div class='location'>Sierre, Switzerland, </div>
+      <div class='date'>March 2010.</div>
+      <div class='slides'>[<a href='http://lampwww.epfl.ch/~phaller/doc/scala-tutorial-sac2010.pdf'>slides</a>]</div>
+      
+      
+  </div></li>
+  
+
+  
+  <li><div class='talk'>
+      
+      <div class='title'>Actor-Based Concurrency in Scala,</div>
+      <div class='with'>with Frank Sommers,</div>
+      <div class='conference'>JavaOne 2009,</div>
+      <div class='location'>San Francisco, California, USA, </div>
+      <div class='date'>June 2009.</div>
+      <div class='slides'>[<a href='http://lampwww.epfl.ch/~phaller/doc/scala-tutorial-sac2010.pdf'>slides</a>]</div>
+      
+      
+  </div></li>
+  
+
+  
+
+  
+  <li><div class='talk'>
+      <span class='label' style='background-color: #CA432F;'>invited</span>
+      <div class='title'>An Overview of Scala,</div>
+      
+      <div class='conference'>Copenhagen Programming Language Seminar (COPLAS),</div>
+      <div class='location'>Copenhagen, Denmark, </div>
+      <div class='date'>June 2008.</div>
+      <div class='slides'>[<a href='http://lampwww.epfl.ch/~phaller/doc/scala-overview-itu.pdf'>slides</a>]</div>
+      
+      
+  </div></li>
+  
+
+  
+  <li><div class='talk'>
+      
+      <div class='title'>Implementing Joins using Extensible Pattern Matching,</div>
+      
+      <div class='conference'>10th International Conference on Coordination Models and Languages (COORDINATION'08),</div>
+      <div class='location'>Oslo, Norway, </div>
+      <div class='date'>June 2008.</div>
+      <div class='slides'>[<a href='http://lampwww.epfl.ch/~phaller/doc/scala-joins-coord08.pdf'>slides</a>]</div>
+      
+      
+  </div></li>
+  
+
+  
+  <li><div class='talk'>
+      <span class='label' style='background-color: #CA432F;'>invited</span>
+      <div class='title'>Concurrent Programming in Scala: Actors and Joins,</div>
+      
+      <div class='conference'>2nd International Summer School on Trends in Concurrency (TiC'08),</div>
+      <div class='location'>Prague, Czech Republic, </div>
+      <div class='date'>June 2008.</div>
+      
+      
+      
+  </div></li>
+  
+
+  
+
+  
+  <li><div class='talk'>
+      
+      <div class='title'>Implementing Joins using Extensible Pattern Matching,</div>
+      
+      <div class='conference'>Workshop on Declarative Aspects of Multicore Programming (DAMP'08) @ POPL 2008,</div>
+      <div class='location'>San Francisco, California, USA, </div>
+      <div class='date'>January 2008.</div>
+      
+      
+      
+  </div></li>
+  
+
+  
+
+  
+  <li><div class='talk'>
+      
+      <div class='title'>Actors that Unify Threads and Events,</div>
+      
+      <div class='conference'>9th International Conference on Coordination Models and Languages (COORDINATION'07),</div>
+      <div class='location'>Paphos, Cyprus, </div>
+      <div class='date'>June 2007.</div>
+      <div class='slides'>[<a href='http://lampwww.epfl.ch/~phaller/doc/ActorsUnify.pdf'>slides</a>]</div>
+      
+      
+  </div></li>
+  
+
+  
+  <li><div class='talk'>
+      
+      <div class='title'>Scala Actors-- Scalable Multithreading on the JVM,</div>
+      
+      <div class='conference'>IBM Development Lab,</div>
+      <div class='location'>Boeblingen, Germany, </div>
+      <div class='date'>May 2007.</div>
+      <div class='slides'>[<a href='http://lampwww.epfl.ch/~phaller/doc/ScalaActors.pdf'>slides</a>]</div>
+      
+      
+  </div></li>
+  
+
+  
+
+  
+
+</ul><hr /><p>
+  Copyright 2006-2015 Philipp Haller
+</p><!-- <script type="text/javascript">
+  var current_date = new Date(document.lastModified);
+
+  var month_names = new Array ( );
+  month_names[month_names.length] = "January";
+  month_names[month_names.length] = "February";
+  month_names[month_names.length] = "March";
+  month_names[month_names.length] = "April";
+  month_names[month_names.length] = "May";
+  month_names[month_names.length] = "June";
+  month_names[month_names.length] = "July";
+  month_names[month_names.length] = "August";
+  month_names[month_names.length] = "September";
+  month_names[month_names.length] = "October";
+  month_names[month_names.length] = "November";
+  month_names[month_names.length] = "December";
+
+  var day_names = new Array ( );
+  day_names[day_names.length] = "Sunday";
+  day_names[day_names.length] = "Monday";
+  day_names[day_names.length] = "Tuesday";
+  day_names[day_names.length] = "Wednesday";
+  day_names[day_names.length] = "Thursday";
+  day_names[day_names.length] = "Friday";
+  day_names[day_names.length] = "Saturday";
+
+  document.write ( "<div class='last-modified'>" );
+  document.write ( day_names[current_date.getDay()] );
+  document.write ( ", " );
+  document.write ( month_names[current_date.getMonth()] );
+  document.write ( " " + current_date.getDate() );
+  document.write ( " " );
+  document.write ( " " + current_date.getFullYear() );
+  document.write ( "</div>" );
+</script>
+ -->
+      </div>
+      <div class="span4">
+        <div class="polaroid-wrapper">
+          <div class="polaroid">
+            <img src="./resources/img/profile.png">
+          </div>
+        </div>
+        <div class="rightcolumn-content">
+          <div class="contact" style="position:relative; overflow:auto;">
+  <div class="job">
+    <div class="labl">Currently</div><div class="position">Assistant Professor,</div><div class="company"><a href="https://www.kth.se/en">KTH</a></div>
+  </div>
+  <div class="job">
+    <div class="labl">Previously</div><div class="position">Software<br/>Engineer,</div><div class="company"><a href="http://typesafe.com/">Typesafe</a></div>
+  </div>
+</div>
+
+<div class="contact">
+  <div class="icon" style="padding-top: 8px;"><img src="./resources/img/address-icon.png"/></div>
+  <div class="content">Lindstedtsvägen 3<br/>SE-100 44 Stockholm, Sweden</div>
+  <div id="map"></div>
+</div>
+
+<div class="contact">
+  <div class="icon" style="padding-top: 6px;"><img src="./resources/img/email-icon.png"/></div>
+  <div class="content"><a href="mailto:phaller@kth.se">phaller@kth.se</a></div>
+</div>
+
+<!--
+<div class="contact">
+  <div class="icon" style="padding-top: 4px;"><img src="./resources/img/phone-icon.png"/></div>
+  <div class="content"></div>
+</div>
+//-->
+
+<div class="contact">
+  <div class="icon" style="padding-top: 4px;"><img src="./resources/img/twitter-icon.png"/></div>
+  <div class="content"><a href="https://twitter.com/philippkhaller">@philippkhaller</a></div>
+</div>
+
+<div class="contact">
+  <div class="icon" style="padding-top: 4px;"><img src="./resources/img/google-scholar-icon.png"/></div>
+  <div class="content"><a href="https://scholar.google.com/citations?user=sDt5PL4AAAAJ">Google Scholar Author Profile</a></div>
+</div>
+
+<div class="contact">
+  <div class="icon" style="padding-top: 4px;"><img src="./resources/img/dblp-icon.png"/></div>
+  <div class="content"><a href="http://www.informatik.uni-trier.de/~ley/pers/hy/h/Haller:Philipp.html">DBLP Author Profile</a></div>
+</div>
+
+<div class="contact">
+  <div class="icon" style="padding-top: 4px;"><img src="./resources/img/acm-icon.png"/></div>
+  <div class="content"><a href="http://dl.acm.org/author_page.cfm?id=81430665752">ACM Digital Library Author Profile</a></div>
+</div>
+
+<!-- <br/><img src="./resources/img/person-icon.png"/>
+Lindstedtsvägen 3<br/>SE-100 44 Stockholm, Sweden -->
+
+          <div class="program-committees">
+  <h3>Program Committees</h3>
+  <ul>
+    <li><a href="http://2016.ecoop.org/">ECOOP 2016</a></li>
+    <li><a href="http://www.guidosalvaneschi.com/REBLS/REBLS2015/">REBLS 2015</a></li>
+    <li><a href="http://soft.vub.ac.be/AGERE15/">AGERE! 2015</a> (Co-chair)</li>
+    <li><a href="http://lampwww.epfl.ch/~hmiller/scala2015/">Scala 2015</a> (Co-chair)</li>
+    <li><a href="http://www.enase.org/">ENASE 2015</a></li>
+    <li><a href="http://www.guidosalvaneschi.com/REBLS/REBLS2014/">REBLS 2014</a></li>
+    <li><a href="http://soft.vub.ac.be/AGERE14/">AGERE! 2014</a> (Co-chair)</li>
+    <li><a href="http://lampwww.epfl.ch/~hmiller/scala2014/">Scala 2014</a> (Co-chair)</li>
+    <li><a href="http://www.cse.chalmers.se/~nad/plpv-2014/">PLPV 2014</a></li>
+    <li><a href="http://soft.vub.ac.be/REM13/">REM 2013</a></li>
+    <li><a href="http://agents.usask.ca/agere2013/">AGERE! 2013</a></li>
+    <li><a href="http://lampwww.epfl.ch/~hmiller/scala2013/">Scala 2013</a> (Co-chair)</li>
+    <li><a href="http://info-web.lirmm.fr/ecoop13/">ECOOP 2013</a></li>
+    <li>ACME 2013</li>
+    <li><a href="http://apice.unibo.it/xwiki/bin/view/AGERE2012/">AGERE! 2012</a></li>
+    <li><a href="http://ecoop12.cs.purdue.edu/content/international-workshop-languages-multi-core-era-lame12">LaME 2012</a></li>
+  </ul>
+</div>
+<div class="program-committees">
+  <h3>External Reviewing</h3>
+  <ul>
+    <li><a href="http://flint.cs.yale.edu/esop2014/">ESOP 2014</a></li>
+    <li><a href="http://www.journals.elsevier.com/science-of-computer-programming/">Science of Computer Programming 2012, 2013</a></li>
+    <li><a href="http://splashcon.org/2012/">OOPSLA 2012</a></li>
+    <li><a href="http://splashcon.org/2011/">OOPSLA 2011</a></li>
+    <li><a href="http://discotec.ru.is/fmoodsforte/main">FMOODS-FORTE 2011</a></li>
+    <li><a href="http://software.imdea.org/~gbarthe/esop11/">ESOP 2011</a></li>
+    <li><a href="http://www.complang.tuwien.ac.at/cc2011/">CC 2011</a></li>
+    <li><a href="http://www.floc-conference.org/CAV-home.html">CAV 2010</a></li>
+    <li><a href="http://discotec08.ifi.uio.no/Coordination08/HomePage">COORDINATION 2008</a></li>
+    <li><a href="http://www.oopsla.org/oopsla2007/index.php?page=home/">OOPSLA 2007</a></li>
+    <li><a href="http://www.cs.rochester.edu/meetings/TRANSACT07/">TRANSACT 2007</a></li>
+  </ul>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </body>
+</html>
